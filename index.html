@@ -42,7 +42,7 @@
                                 <ul class="header__notify-list">
                                     <li class="header__notify-item header__notify-item--viewed">
                                         <a href=""class="header__notify-link">
-                                            <img src="https://agiay.vn/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/09/giay_the_thao_nam_BN0113-1.jpeg.webp" alt="" class="header_notify-img">
+                                            <img src="https://product.hstatic.net/200000643331/product/z4129500491349_8a4eb184873f775c11f9756e95fd455d_1763de038a8f474f889898e1b6bc10ac_master.jpg" alt="" class="header_notify-img">
                                             <div class="header__notify-info">
                                                 <span class="header__notify-name">link san pham</span>
                                                 <span class="header__notify-descriotion">mo ta </span>
@@ -83,11 +83,75 @@
                         <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
                     </ul>
                 </nav>
+                <!-- Heafer with search -->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <li class="header__logo-img">
+                                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/sneaker-store-logo-brand-logo-design-template-ea9c8040d69fa064feee3014cb8e9827_screen.jpg?ts=1645976739" alt="" class="header_notify-img">
+                        </li>
+                    </div>
+                    <div class="header__search">
+
+                    </div>
+                    <div class="header__cart">
+                        <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
             </div>
         </header>
 
-        <div class="container">
-
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fa-solid fa-list"></i>
+                                danh muc
+                            </h3>
+            
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">Giày da</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Giay vai</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Giay chay bo</a>
+                                </li>
+                            </ul>
+                        </nav>   
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="btn">Phổ biến</button>
+                            <button class="btn btn--primary">Mới nhất</button>
+                            <button class="btn">Bán chạy</button>
+                            <div class="select-input">
+                                <span class="select-input__lable">
+                                Giá
+                                </span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/2
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
         </div>
         <footer class="footer">
 
@@ -97,8 +161,8 @@
         <div class="modal__overlay"></div>
 
         <div class="modal__body">
-            <!--Authen form-->
-            <div class="auth-form">
+            <!--Register form-->
+            <!-- <div class="auth-form">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng kí</h3>
@@ -144,8 +208,52 @@
                         
                     </a>
                 </div>
+            </div> -->
+            <!--login form-->
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng kí</span>                     
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhap email cua ban">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="passwors" class="auth-form__input" placeholder="Nhap mat khau">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">                  
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn btn--normal auth-form__controls-back ">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                        <span class="auth-form__socials-title">
+                           Đăng nhập với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        <span class="auth-form__socials-title">
+                           Đăng nhập với Google
+                        </span>    
+                        
+                    </a>
+                </div>
             </div>
-            
         </div>
     </div>
 </body>
