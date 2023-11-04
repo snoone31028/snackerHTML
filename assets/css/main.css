@@ -329,6 +329,10 @@ padding-left: 0;
 
 }
 
+.app__content{
+    padding-top:  36px;
+}
+
 .category{
     border-radius: 2px;
     background-color:  var(--while-color);
@@ -390,4 +394,78 @@ border-color: transparent transparent transparent transparent var(--primary-colo
 
 /* home short filter */
 
+.home-filter{
+    
+    display: flex;
+    align-items: center;
+    padding: 12px 22px;
+    border-radius: 2px;
 
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+.home-filter__label{
+    font-size: 1.4rem;
+    color: #555;
+    margin-right: 30px;
+}
+
+.home-filter__btn{
+    min-width: 90px;
+    margin-right: 12px;
+    background-color: var(--while-color);
+}
+
+.home-filter__page{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.home-filter__page-num{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-right: 22px;
+}
+
+.home-filter__page-current{
+    color: var(--primary-color);
+}
+
+.home-filter__page-control{
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    width: 72px;
+    height: 36px;
+}
+
+.home-filter__page-btn{
+    flex: 1;
+    display: flex;
+    background-color: var(--while-color);
+    text-decoration:  none ;
+}
+
+.home-filter__page-btn--disabled{
+    background-color: #f9f9f9;
+    cursor: default;
+    
+}
+.home-filter__page-btn--disabled .home-filter__page-icon{
+    color: #ccc;
+        
+}
+.home-filter__page-btn:first-child{
+    border-right: 1px solid #eee;
+}
+
+.home-filter__page-icon{
+    margin: auto;
+    font-size: 1.4rem; 
+    color: #555;
+}
+
+.home-product-item__img{
+    width: 90px;
+}
